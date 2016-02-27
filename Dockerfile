@@ -23,6 +23,7 @@ RUN rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 #Set upstart command
 CMD cd /root && python zeronet.py --ui_ip 0.0.0.0
 
+VOLUME /root/data
 #Expose ports
 EXPOSE 43110
 EXPOSE 15441
